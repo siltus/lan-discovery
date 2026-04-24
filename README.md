@@ -47,6 +47,28 @@ attempts), and lets you rename and annotate every device. Available as both a
 
 Python 3.10 or newer.
 
+**Install directly from GitHub (no clone required):**
+
+```bash
+pip install git+https://github.com/siltus/lan-discovery.git
+```
+
+Pin to a tag, branch, or commit:
+
+```bash
+pip install git+https://github.com/siltus/lan-discovery.git@v0.1.0
+pip install git+https://github.com/siltus/lan-discovery.git@main
+pip install git+https://github.com/siltus/lan-discovery.git@<commit-sha>
+```
+
+Upgrade later:
+
+```bash
+pip install --upgrade --force-reinstall git+https://github.com/siltus/lan-discovery.git
+```
+
+**Or install from a local clone (for development):**
+
 ```bash
 git clone https://github.com/siltus/lan-discovery.git
 cd lan-discovery
