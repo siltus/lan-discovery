@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="scan-bar">
+  <form method="post" action="/scan" class="scan-form">
+    <input type="text" name="interface" placeholder="interface (optional)">
+    <input type="text" name="subnet" placeholder="subnet CIDR (optional)">
+    <label><input type="checkbox" name="full" value="true"> allow large subnets</label>
+    <button type="submit" {% if scan_state.running %}disabled{% endif %}>Scan now</button>
+  </form>
+  <div hx-get="/scan/status" hx-trigger="load, every 1s" hx-swap="innerHTML"
+       id="scan-status">
+    {% include "_scan_status.html" %}
+  </div>
+</section>
+
+<table class="devices">
+  <thead>
+    <tr>
+      <th>Name</th><th>IP</th><th>MAC</th><th>Vendor</th>
+      <th>Type</th><th>Hostname</th><th>Last seen</th><th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for d in devices %}
+    <tr class="{{ 'online' if d.online else 'offline' }}">
+      <td><a href="/devices/{{ d.id }}">{{ d.display_name }}</a></td>
+      <td>{{ d.ip or "" }}</td>
+      <td class="mono">{{ d.mac or "" }}</td>
+      <td>{{ d.vendor or "" }}</td>
+      <td>{{ d.device_type or "" }}</td>
+      <td>{{ d.hostname or "" }}</td>
+      <td class="mono">{{ d.last_seen or "" }}</td>
+      <td>{% if d.online %}●{% else %}·{% endif %}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="8" class="empty">No devices yet — run a scan.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

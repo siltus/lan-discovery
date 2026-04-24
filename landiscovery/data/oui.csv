@@ -1,0 +1,246 @@
+"""Tiny bundled fallback so OUI lookups work offline before `landiscovery oui-update`."""
+prefix,vendor
+000000,Xerox
+000C29,VMware
+001C42,Parallels
+0050C2,IEEE Registration Authority
+000569,VMware
+080027,Oracle (PCS Systemtechnik / VirtualBox)
+525400,QEMU/KVM
+B827EB,Raspberry Pi Foundation
+DCA632,Raspberry Pi Trading
+E45F01,Raspberry Pi Trading
+D83ADD,Raspberry Pi Trading
+2CCF67,Raspberry Pi (Trading) Ltd
+3C22FB,Apple
+F0F61C,Apple
+A4C361,Apple
+AC8783,Apple
+F4F15A,Apple
+E0F847,Apple
+D89E3F,Apple
+3C0754,Apple
+00A040,Apple
+F86214,Amazon Technologies
+44650D,Amazon Technologies
+FCA667,Amazon Technologies
+74C246,Amazon Technologies
+68DBF5,Amazon Technologies
+F0272D,Amazon Technologies
+A002DC,Amazon Technologies
+F0D2F1,Amazon Technologies
+6CAD3F,Hon Hai (Foxconn)
+00177C,ADB Broadband
+A4DA22,Beats Electronics
+F0989D,Apple
+A4B197,Apple
+70CD60,Apple
+F4B7E2,Apple
+00164E,Cisco-Linksys
+0024D6,Intel
+B8AEED,Intel
+00E04C,Realtek
+001A11,Google
+F4F5D8,Google
+E47D5A,Google
+54600F,Google
+6CC21D,Google
+A4D1D2,Apple
+0017F2,Apple
+606BBD,Samsung
+8425DB,Samsung
+F47B5E,Samsung
+0023D7,Samsung
+DC85DE,AzureWave Technology
+00146C,Netgear
+00224D,ASUSTek COMPUTER
+50EBF6,ASUSTek COMPUTER
+1C872C,ASUSTek COMPUTER
+F4D108,Liteon Technology
+44D9E7,Ubiquiti Networks
+245A4C,Ubiquiti Networks
+B4FBE4,Ubiquiti Networks
+04A151,Netgear
+20E52A,Netgear
+6038E0,Belkin International
+00248C,Asustek Computer
+8C8590,Apple
+6C709F,Apple
+A0999B,Apple
+74E2F5,Apple
+A4B805,Apple
+3C0518,Apple
+9CF48E,Apple
+20A2E4,LG Electronics
+38AA3C,Samsung
+40B89A,Samsung
+0023A7,Samsung
+F0C77F,Apple
+F40F24,Apple
+9C04EB,Apple
+54E43A,Apple
+4CB199,Apple
+84FCFE,Apple
+ACDE48,Apple (private)
+74E1B6,Apple
+4C3275,Apple
+9803D8,Apple
+F0CBA1,Apple
+A4F1E8,HTC
+F8FFC2,Apple
+54AA00,Apple
+A0EDCD,Apple
+708BCD,ASUSTek
+000B6B,Wistron Neweb
+38F73D,Amazon
+84D6D0,Amazon
+FCE998,Amazon
+1C04B4,Sonos
+B8E937,Sonos
+000E58,Sonos
+347E5C,Sonos
+74D43543,Roku  
+B83E59,Roku
+D83134,Roku
+B0A737,Roku
+C8DBF7,Roku
+B07995,Sonos
+E4956E,Espressif (ESP/Tasmota)
+2462AB,Espressif
+240AC4,Espressif
+84F3EB,Espressif
+A020A6,Espressif
+EC64C9,Espressif
+54B202,TP-LINK
+1027F5,TP-LINK
+9405BB,TP-LINK
+B0BE76,TP-LINK
+E848B8,TP-LINK
+D80F99,TP-LINK
+F09FC2,Ubiquiti Networks
+68725231,UniFi  
+DC9FDB,Ubiquiti Networks
+00156D,Ubiquiti Networks
+FCECDA,Ubiquiti Networks
+24A43C,Ubiquiti Networks
+802AA8,Ubiquiti Networks
+0418D6,Ubiquiti Networks
+788A20,Ubiquiti Networks
+0090E8,Moxa
+3CD92B,Hewlett Packard
+9CB654,Hewlett Packard
+F430B9,Hewlett Packard
+B8AF67,Hewlett Packard
+D4C9EF,Hewlett Packard
+3C52821,HP Inc.
+0017A4,Brother Industries
+008092,Silex Technology
+30AEA4,Espressif
+240D5B,Espressif
+0CF5A4,Cisco
+001E58,WistronNeweb
+08863B,Belkin
+EC1A59,Belkin
+94103E,Belkin
+54271E,Belkin
+D8A25E,Apple
+A8667F,Apple
+DCA904,Apple
+ACBC32,Apple
+6CC26B,Murata Manufacturing
+BC926B,Apple
+74F61C,Apple
+80EA96,Apple
+00C0CA,ALFA NETWORK
+0025BC,Apple
+FC253F,Apple
+386077,Lenovo
+3417EB,DELL
+B083FE,Dell
+F8B156,Dell
+802BF9,Dell
+F8DBD9,Dell
+643150,Dell
+00112F,ASRock
+001D60,ASUSTek
+6CFDB9,Realtek
+74D02B,ASUSTek
+1062E5,Liteon
+A85E45,ASUSTek
+70D923,Texas Instruments
+40A36B,Apple
+C8334B,Apple
+BCC810,Apple
+9C207B,Apple
+38C986,Apple
+74E5F9,Intel
+8C1645,Intel
+3C7C3F,Intel
+D850E6,GIGA-BYTE
+E0D55E,GIGA-BYTE
+1C1B0D,GIGA-BYTE
+50E549,GIGA-BYTE
+B42E99,GIGA-BYTE
+6805CA,Intel
+54EE75,Wistron InfoComm
+0023E9,F5 Networks
+000CDB,Ubiquiti Networks
+CC9EA2,Liteon Technology
+EC383F,Apple
+2C1F23,Hewlett-Packard
+9457A5,Hon Hai (Foxconn)
+70886B,Huawei
+281878,Huawei
+40CBA8,Huawei
+50D2F5,Huawei
+B499BA,Hewlett Packard
+0017AB,Nintendo
+A4C0E1,Nintendo
+98B6E9,Nintendo
+B88AEC,Nintendo
+0019FD,Nintendo
+58BD0F,Nintendo
+04030D,Nintendo
+0DB055,Nintendo
+84F3EB,Espressif
+DC4F22,Espressif
+9C9C1F,Espressif
+98F4AB,Espressif
+1839EE,Sony
+704D7B,Sony Interactive Entertainment
+00041F,Sony Interactive Entertainment
+0019C5,Sony
+70269D,Sony
+44D4E0,Sony
+D04F7E,Sony Interactive Entertainment
+DCFB02,Sony
+AC9B0A,Sony
+D8D43C,Sony
+FCF152,Sony
+7CED8D,Microsoft
+0017FA,Microsoft
+0050F2,Microsoft
+9CAA1B,Microsoft
+60453E,Microsoft
+A0BDCD,Kyocera Industrial
+003192,Murata Manufacturing
+58FB84,Texas Instruments
+B0B448,Texas Instruments
+2C549188,Microsoft  
+CC2DB7,Microsoft
+60A44C,ASUSTek
+70B3D5,IEEE Registration Authority (small assignments)
+6CECA1,Texas Instruments
+B470E5,Tuya Smart Inc.
+DCF505,Tuya Smart Inc.
+50029190,Espressif  
+EC624C,Espressif
+98F4AB,Espressif
+4C796E,Sonoff (ITEAD)
+600194,Espressif
+840D8E,Espressif
+C44F33,Espressif
+3C71BF,Espressif
+B4E62D,Espressif
+80F3EF,Espressif
+AC0BFB,Espressif

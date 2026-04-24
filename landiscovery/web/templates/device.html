@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}{{ d.display_name }} - LAN Discovery{% endblock %}
+{% block content %}
+<p><a href="/">&larr; back</a></p>
+<h2>{{ d.display_name }} <small>#{{ d.id }}</small></h2>
+
+<dl class="meta">
+  <dt>IP</dt><dd>{{ d.ip or "" }}</dd>
+  <dt>MAC</dt><dd class="mono">{{ d.mac or "" }}</dd>
+  <dt>Hostname</dt><dd>{{ d.hostname or "" }}</dd>
+  <dt>Vendor</dt><dd>{{ d.vendor or "" }}</dd>
+  <dt>Type</dt><dd>{{ d.device_type or "" }}</dd>
+  <dt>OS hint</dt><dd>{{ d.os_hint or "" }}</dd>
+  <dt>First seen</dt><dd class="mono">{{ d.first_seen or "" }}</dd>
+  <dt>Last seen</dt><dd class="mono">{{ d.last_seen or "" }}</dd>
+</dl>
+
+<form method="post" action="/devices/{{ d.id }}/rename" class="annotate">
+  <label>Custom name
+    <input type="text" name="name" value="{{ d.custom_name or '' }}">
+  </label>
+  <button type="submit">Save name</button>
+</form>
+
+<form method="post" action="/devices/{{ d.id }}/note" class="annotate">
+  <label>Notes
+    <textarea name="notes" rows="4">{{ d.notes or '' }}</textarea>
+  </label>
+  <button type="submit">Save notes</button>
+</form>
+
+<h3>Services</h3>
+{% if d.services %}
+<table class="services">
+  <thead><tr><th>Proto</th><th>Port</th><th>Name</th><th>Banner</th></tr></thead>
+  <tbody>
+    {% for s in d.services %}
+    <tr>
+      <td>{{ s.proto }}</td>
+      <td>{{ s.port or "" }}</td>
+      <td>{{ s.name }}</td>
+      <td class="mono small">{{ s.banner }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p><em>No services recorded.</em></p>
+{% endif %}
+{% endblock %}

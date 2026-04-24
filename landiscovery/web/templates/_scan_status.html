@@ -1,0 +1,8 @@
+{% if scan_state.running %}
+  <span class="status running">scanning: {{ scan_state.phase }}</span>
+{% else %}
+  <span class="status idle">idle</span>
+{% endif %}
+{% if scan_state.log %}
+  <span class="last-event">{{ scan_state.log[-1].event }}</span>
+{% endif %}
